@@ -20,7 +20,8 @@ export class AppComponent {
     { title: 'Trash', url: '/folder/trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/spam', icon: 'warning' },
     { title: 'Botões', url: '/botoes', icon: 'albums' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane'},
+    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
+    { title: 'Alerta', url: '/alerta', icon: 'warning' }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {

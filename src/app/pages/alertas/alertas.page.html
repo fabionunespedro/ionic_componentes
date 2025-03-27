@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defautHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>alertas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="presentAlert()" expand="block">
+    Present Alert
+  </ion-button>
+</ion-content>
