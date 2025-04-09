@@ -3,7 +3,14 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonRouterLink } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp, albumsOutline, albumsSharp } from 'ionicons/icons';
+import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp, albumsOutline, albumsSharp, browsersOutline, browsersSharp } from 'ionicons/icons';
+
+addIcons({
+  albumsSharp,
+  albumsOutline,
+  browsersOutline,
+  browsersSharp
+});
 
 @Component({
   selector: 'app-root',
@@ -11,6 +18,7 @@ import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutlin
   styleUrls: ['app.component.scss'],
   imports: [RouterLink, RouterLinkActive, IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterLink, IonRouterOutlet],
 })
+
 export class AppComponent {
   public appPages = [
     { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
@@ -21,7 +29,9 @@ export class AppComponent {
     { title: 'Spam', url: '/folder/spam', icon: 'warning' },
     { title: 'Botões', url: '/botoes', icon: 'albums' },
     { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Alerta', url: '/alerta', icon: 'warning' }
+    { title: 'Alerta', url: '/alerta', icon: 'warning' },
+    { title: 'Badges', url: '/badges', icon: 'heart' },
+    { title: 'Cartao', url: '/cartao', icon: 'browsers' }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {

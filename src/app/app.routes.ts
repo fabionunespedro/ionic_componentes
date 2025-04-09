@@ -14,9 +14,18 @@ export const routes: Routes = [
   {
     path: 'botoes',
     loadComponent: () => import('./pages/botoes/botoes.page').then( m => m.BotoesPage)
-  },  {
+  },
+  {
     path: 'alertas',
-    loadComponent: () => import('./pages/alertas/alertas.page').then( m => m.AlertasPage)
+    loadComponent: () => import('./pages/alertas/alertas.page').then( m => m.AlertaPage)
+  },
+  {
+    path: 'badges',
+    loadComponent: () => import('./pages/badges/badges.page').then( m => m.BadgesPage)
+  },
+  {
+    path: 'cartao',
+    loadComponent: () => import('./pages/cartao/cartao.page').then( m => m.CartaoPage)
   },
 
 ];
